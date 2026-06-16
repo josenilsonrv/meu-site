@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clone - Segredo das Empresas</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Borda vermelha em todas as divisões da página */
+        * {
+            outline: 2px solid red !important;
+        }
+    </style>
+</head>
+<body class="bg-[#050c07] text-gray-100 antialiased min-h-screen">
+    <!-- SEÇÃO 1 | Apresentação Inicial | OK--> 
+    <section class="relative w-full min-h-[85vh] flex items-center justify-center bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-[#072d16] via-[#030c06] to-[#020704] py-12 md:py-20 px-4 overflow-hidden border-b border-green-950/40">
+        
+        <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10"> 
+            <div class="md:col-span-7 flex flex-col justify-center items-center space-y-6">
+
+                <div class="space-y-1 text-center">
+                    <h1 class="text-4xl md:text-2xl font-black text-white tracking-tight leading-none uppercase">
+                        <span class="text-[#00ff44] block text-5xl md:text-6xl filter drop-shadow-[0_2px_8px_rgba(0,255,68,0.3)]">RATING</span>
+                        DESTRAVE SEU NOME<br>
+                        <span class="text-white">NOS BANCOS</span>
+                    </h1>
+                </div>
+
+                <div class="text-[11px] md:text-xs text-gray-300 max-w-md font-medium leading-relaxed space-y-1 text-center">
+                    <p>
+                        <span class="text-[#00ff44] font-bold">87% das pessoas</span> que assistem esse vídeo conseguem 
+                        <span class="text-[#00ff44] font-bold">Desbloquear o nome em Todos os bancos,</span> 
+                        aprovando seus pedidos <span class="underline decoration-[#00ff44] font-bold">em 9 dias...</span>
+                    </p>
+                    <p class="text-gray-400 text-[10px]">
+                        <span class="font-bold text-gray-200">Gerente</span> revela sobre o <span class="font-bold text-gray-200">Rating</span>. Mecanismo capaz de tirar as "travas bancárias"
+                    </p>
+                </div>
+
+                <div class="w-full max-w-2xl bg-[#1f2026]/90 border border-gray-800/60 rounded-sm p-8 md:p-12 aspect-[4/5] md:aspect-video flex flex-col justify-center space-y-6 shadow-2xl backdrop-blur-sm">
+                    <p class="text-[#00ff44] font-semibold text-base md:text-lg text-center">
+                          Você já começou a assistir esse vídeo
+                    </p>
+    
+                    <div class="flex flex-col space-y-4 items-start pl-4 md:pl-8">
+                        <button class="flex items-center space-x-3 text-gray-300 hover:text-[#00ff44] transition-colors text-sm md:text-base group text-left">
+                            <span class="w-5 h-5 flex items-center justify-center rounded-full border border-gray-500 group-hover:border-[#00ff44] text-[10px]">▶</span>
+                            <span class="underline decoration-dotted">Continuar assistindo?</span>
+                        </button>
+            
+                        <button class="flex items-center space-x-3 text-gray-300 hover:text-[#00ff44] transition-colors text-sm md:text-base group text-left">
+                        <span class="w-5 h-5 flex items-center justify-center rounded-full border border-gray-500 group-hover:border-[#00ff44] text-[12px]">⟲</span>
+                        <span class="underline decoration-dotted">Assistir do início?</span>
+                        </button>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="md:col-span-5 flex justify-center items-end relative h-64 md:h-full min-h-[350px] md:min-h-[500px]">
+                <img src="SUA_IMAGEM_DO_APRESENTADOR.png" alt="Apresentador" class="absolute bottom-0 max-h-full object-contain filter drop-shadow-[0_0_30px_rgba(7,45,22,0.5)] mix-blend-lighten">
+                
+                <div class="absolute inset-0 bg-gradient-to-t from-[#030c06] to-transparent pointer-events-none md:hidden"></div>
+            </div>
+
+        </div>
+
+        <div class="absolute top-1/2 right-0 -translate-y-1/2 w-96 h-96 bg-green-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+    </section>
+    <!-- SEÇÃO 2 | Toca no Problema, gera conexão | OK-->
+    <section class="w-full bg-[#030c06] px-4 flex flex-col items-center justify-center border-b border-green-950/20">
+        
+        <div class="max-w-7xl w-full flex flex-col items-center space-y-12 md:space-y-16">
+            
+            <ul class="space-y-1 md:space-y-1.5 text-left max-w-2xl w-full md:pl-24 font-medium text-gray-200 text-[11px] sm:text-sm md:text-[12px] tracking-wide px-4 leading-snug">
+                
+                <li class="flex items-start space-x-3 md:space-x-4">
+                    <span class="text-red-600 font-black text-lg md:text-xl select-none leading-none mt-1">✕</span>
+                    <p>Você paga todas as contas em dia e mesmo assim o banco recusa seu crédito?</p>
+                </li>
+
+                <li class="flex items-start space-x-3 md:space-x-4">
+                    <span class="text-red-600 font-black text-lg md:text-xl select-none leading-none mt-1">✕</span>
+                    <p>Tem nome limpo, mas nunca consegue um limite decente?</p>
+                </li>
+
+                <li class="flex items-start space-x-3 md:space-x-4">
+                    <span class="text-red-600 font-black text-lg md:text-xl select-none leading-none mt-1">✕</span>
+                    <p>Já pediu ajuda ao gerente e mesmo assim ouviu "não"?</p>
+                </li>
+
+                <li class="flex items-start space-x-3 md:space-x-4">
+                    <span class="text-red-600 font-black text-lg md:text-xl select-none leading-none mt-1">✕</span>
+                    <p>Sente que, não importa o que faça, você continua invisível para o sistema?</p>
+                </li>
+
+            </ul>
+
+            <div class="text-center w-full">
+                <h2 class="text-white text-4xl sm:text-5xl md:text-7xl font-extrabold tracking-tight select-none">
+                    Que frustrante...
+                </h2>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- SEÇÃO 3 | Conscientização-->
+    <section class="w-full bg-[#030c06] py-16 md:py-24 px-4 flex justify-center items-center border-b border-green-950/20">
+        
+        <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center">
+            
+            <div class="flex flex-col space-y-6 text-left order-2 md:order-1 px-2 md:px-0">
+                
+                <h2 class="text-white text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+                    Mas se eu pago tudo certo, por que isso acontece?
+                </h2>
+                
+                <div class="space-y-4 text-gray-300 text-base sm:text-lg leading-relaxed font-medium tracking-wide">
+                    <p>
+                        Eu entendo perfeitamente. O que ninguém te conta é que o banco não decide com base no seu score do Serasa.
+                    </p>
+                    <p>
+                        Ele olha para um sistema interno chamado <span class="text-[#00ff44] font-bold">rating bancário</span>, uma nota secreta que vai da letra A até a letra E, e analisando <span class="text-white font-bold underline decoration-[#00ff44]">mais de 200 variáveis diferentes</span>.
+                    </p>
+                </div>
+                
+            </div>
+            
+            <div class="flex justify-center items-center order-1 md:order-2 px-4 md:px-0">
+                <div class="relative w-full max-w-[320px] sm:max-w-[380px] md:max-w-full aspect-square flex justify-center items-center">
+                    <img src="SUA_IMAGEM_DO_SCORE.png" alt="Gráfico Score e Rating" class="w-full h-auto object-contain filter drop-shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- SEÇÃO 4 -->
+    <section class="w-full bg-[#030c06] py-16 md:py-24 px-4 flex justify-center items-center border-b border-green-950/20">
+        
+        <div class="max-w-7xl w-full grid grid-cols-1 md:grid-cols-12 gap-12 md:gap-8 items-center"> 
+            
+            <div class="md:col-span-6 flex justify-center items-center px-4 md:px-0">
+                <div class="relative w-full max-w-[400px] md:max-w-full aspect-[4/3] md:aspect-auto flex justify-center items-center">
+                    <img src="SEU_GRAFICO_RATING_ESQUERDA.png" alt="Esquema de Rating de A a F" class="w-full h-auto object-contain">
+                </div>
+            </div>
+
+            <div class="md:col-span-6 flex flex-col space-y-6 text-left px-2 md:px-6">
+                
+                <h3 class="text-white text-lg sm:text-xl font-black tracking-wider uppercase">
+                    Aqui está o segredo que muda tudo:
+                </h3>
+                    <!--     
+                    -->
+                <div class="space-y-4 font-semibold text-xs sm:text-sm tracking-wide text-gray-200">
+                    
+                    <div class="flex items-center space-x-3">
+                        <span class="w-3.5 h-3.5 bg-[#00ff44] rounded-full shadow-[0_0_8px_#00ff44] flex-shrink-0"></span>
+                        <p><span class="text-white font-bold">RATING A</span> = Condições VIP</p>
+                    </div>
+
+                    <div class="flex items-center space-x-3">
+                        <span class="w-3.5 h-3.5 bg-[#34d399] rounded-full flex-shrink-0"></span>
+                        <p><span class="text-white font-bold">RATING B</span> = Boas condições</p>
+                    </div>
+
+                    <div class="flex items-center space-x-3">
+                        <span class="w-3.5 h-3.5 bg-[#eab308] rounded-full flex-shrink-0"></span>
+                        <p><span class="text-white font-bold">RATING C</span> = Aprovação mínima <span class="text-gray-400 font-normal">(condições ruins)</span></p>
+                    </div>
+
+                    <div class="flex items-center space-x-2 py-2 text-gray-400 font-mono text-[11px] tracking-widest select-none">
+                        <span>-----------</span>
+                        <span class="text-white font-bold text-xs font-sans tracking-normal">PONTO DE CORTE</span>
+                        <span>-----------</span>
+                    </div>
+
+                    <div class="flex items-center space-x-3">
+                        <span class="w-3.5 h-3.5 bg-red-600 rounded-full flex-shrink-0"></span>
+                        <p><span class="text-gray-400 font-bold">RATING D</span> = Rejeitado automaticamente</p>
+                    </div>
+
+                    <div class="flex items-center space-x-3">
+                        <span class="w-3.5 h-3.5 bg-red-600 rounded-full flex-shrink-0"></span>
+                        <p><span class="text-gray-400 font-bold">RATING E</span> = Rejeitado automaticamente</p>
+                    </div>
+
+                    <div class="flex items-center space-x-3">
+                        <span class="w-3.5 h-3.5 bg-red-600 rounded-full flex-shrink-0"></span>
+                        <p><span class="text-gray-400 font-bold">RATING F</span> = Rejeitado automaticamente</p>
+                    </div>
+
+                </div>
+
+                <p class="italic text-gray-300 text-xs sm:text-sm pt-4 border-t border-green-950/30">
+                    Os bancos só liberam crédito para quem tem <span class="text-[#00ff44] font-bold not-italic">rating A</span>, <span class="text-[#34d399] font-bold not-italic">B</span> ou <span class="text-[#eab308] font-bold not-italic">C</span>.
+                </p>
+                
+            </div>
+
+            
+        </div>
+
+    </section>
+    <!-- SEÇÃO 5 -->
+    <section class="w-full bg-[#030c06] py-16 md:py-20 px-4 flex justify-center items-center border-b border-green-950/20">
+        
+        <div class="max-w-7xl w-full flex flex-col items-center text-center space-y-8 md:space-y-10 px-2">
+            
+            <div class="space-y-4 md:space-y-5 text-gray-200 font-medium text-base sm:text-lg md:text-xl leading-relaxed tracking-wide">
+                <p>
+                    Se você está sendo constantemente rejeitado, é porque está com rating D ou E.
+                </p>
+                <p class="text-white font-bold text-lg sm:text-xl md:text-2xl tracking-normal">
+                    (Você está travado nos bancos)
+                </p>
+                <p class="text-sm sm:text-base md:text-lg text-gray-300">
+                    E <span class="text-white font-extrabold">78% das pessoas estão presas nessa classificação</span> sem nem saber que ela existe.
+                </p>
+            </div>
+
+            <div class="w-full flex justify-center pt-2">
+                <button class="w-full sm:w-auto sm:px-12 py-4 bg-[#00b32c] hover:bg-[#00ff44] text-white hover:text-black font-black text-sm sm:text-base uppercase tracking-wider rounded-md transition-all duration-300 shadow-[0_0_30px_rgba(0,179,44,0.3)] hover:shadow-[0_0_40px_rgba(0,255,68,0.5)] transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer">
+                    Quero ter acesso ao crédito!
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- SEÇÃO 6 -->
+    <section class="w-full bg-[#030c06] py-16 md:py-24 px-4 flex justify-center items-center border-b border-green-950/20">
+        
+        <div class="max-w-7xl w-full flex flex-col items-center space-y-12 md:space-y-16">
+            
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 items-stretch">
+                
+                <div class="bg-[#0b0f0b]/90 border border-green-950/40 rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col space-y-6 shadow-xl">
+                    <h3 class="text-white text-base sm:text-lg md:text-xl font-bold text-center leading-snug">
+                        O Que Os Bancos Analisam e<br class="hidden sm:block"> Você Não Sabe:
+                    </h3>
+                    
+                    <ul class="space-y-4 text-gray-300 font-medium text-xs sm:text-sm leading-relaxed tracking-wide">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-blue-500 text-sm select-none mt-0.5">🔍</span>
+                            <p>Pagar contas antes do vencimento na verdade <span class="text-white font-bold">PREJUDICA</span> seu rating interno</p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-blue-500 text-sm select-none mt-0.5">🔍</span>
+                            <p>Ter conta em vários bancos digitais pode <span class="text-white font-bold">derrubar sua pontuação</span></p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-blue-500 text-sm select-none mt-0.5">🔍</span>
+                            <p>O tipo de conta que você tem vale mais que sua renda</p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-blue-500 text-sm select-none mt-0.5">🔍</span>
+                            <p>Cada tentativa de crédito rejeitada funciona como <span class="text-white font-bold">"ponto negativo"</span></p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-[#0b0f0b]/90 border border-green-950/40 rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col space-y-6 shadow-xl">
+                    <h3 class="text-white text-base sm:text-lg md:text-xl font-bold text-center leading-snug">
+                        E o pior: Este rating não controla apenas bancos. Ele é compartilhado com:
+                    </h3>
+                    
+                    <ul class="space-y-4 text-gray-300 font-medium text-xs sm:text-sm leading-relaxed tracking-wide">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-[#00ff44] text-sm select-none mt-0.5">✅</span>
+                            <p>Bancos das concessionárias do país</p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-[#00ff44] text-sm select-none mt-0.5">✅</span>
+                            <p>Financeiras e cooperativas</p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-[#00ff44] text-sm select-none mt-0.5">✅</span>
+                            <p>Financiamento de faculdades</p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-[#00ff44] text-sm select-none mt-0.5">✅</span>
+                            <p>Empresas de cartão e fintechs</p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-[#00ff44] text-sm select-none mt-0.5">✅</span>
+                            <p>Plataformas de crédito online</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="text-center w-full max-w-3xl px-2 pt-4">
+                <h2 class="text-white text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight leading-snug">
+                    Quando você mudar para <span class="text-[#00ff44]">rating bancário A</span>, TODOS os limites são aprovados automaticamente.
+                </h2>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- SEÇÃO 7 -->
+    <section class="w-full bg-[#030c06] py-16 md:py-24 px-4 flex justify-center items-center border-b border-green-950/20">
+        
+        <div class="max-w-7xl w-full flex flex-col items-center space-y-12 md:space-y-14">
+            
+            <div class="text-center space-y-4 max-w-3xl px-2">
+                <h2 class="text-white text-2xl sm:text-3xl md:text-4xl font-serif italic tracking-wide leading-tight">
+                    "A Armadilha Silenciosa que Está Destruindo Seu Futuro Financeiro"
+                </h2>
+                <p class="text-gray-400 text-sm sm:text-base md:text-lg font-medium leading-relaxed max-w-2xl mx-auto">
+                    Esta situação não é apenas uma "dificuldade temporária" – é uma armadilha que piora dia após dia:
+                </p>
+            </div>
+
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-start px-2 sm:px-6">
+                
+                <div class="flex flex-col space-y-5">
+                    <h3 class="text-white text-base sm:text-lg font-extrabold tracking-wide uppercase">
+                        A Cada <span class="text-red-600">"NÃO"</span> Que Você Recebe:
+                    </h3>
+                    <ul class="space-y-4 text-gray-300 font-medium text-xs sm:text-sm leading-relaxed tracking-wide">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-red-600 text-sm select-none mt-0.5">✕</span>
+                            <p>Sua pontuação interna despenca ainda mais</p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-red-600 text-sm select-none mt-0.5">✕</span>
+                            <p>A próxima aprovação fica mais difícil</p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-red-600 text-sm select-none mt-0.5">✕</span>
+                            <p>Você fica marcado como <span class="text-white font-bold">"cliente de alto risco"</span></p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-red-600 text-sm select-none mt-0.5">✕</span>
+                            <p>As oportunidades financeiras se fecham para sempre</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-col space-y-5">
+                    <h3 class="text-white text-base sm:text-lg font-extrabold tracking-wide uppercase">
+                        O que você está perdendo agora:
+                    </h3>
+                    <ul class="space-y-4 text-gray-300 font-medium text-xs sm:text-sm leading-relaxed tracking-wide">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-[#00ff44] text-sm select-none mt-0.5">💵</span>
+                            <p>Aquela promoção que você não consegue parcelar</p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-[#00ff44] text-sm select-none mt-0.5">💵</span>
+                            <p>O carro que precisa para trabalhar melhor</p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-[#00ff44] text-sm select-none mt-0.5">💵</span>
+                            <p>A reforma da casa que a família espera há anos</p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-[#00ff44] text-sm select-none mt-0.5">💵</span>
+                            <p>O curso que poderia multiplicar sua renda</p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-[#00ff44] text-sm select-none mt-0.5">💵</span>
+                            <p>A reserva de emergência para proteger sua família</p>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="w-full max-w-4xl bg-gradient-to-b from-red-950/80 to-red-950/40 border border-red-900/40 rounded-2xl p-6 sm:p-8 md:p-10 flex flex-col items-center space-y-6 md:space-y-8 shadow-2xl backdrop-blur-sm mx-auto">
+                <p class="text-gray-200 text-center text-xs sm:text-sm md:text-base font-medium leading-relaxed tracking-wide max-w-3xl">
+                    <span class="text-white font-bold">E o pior:</span> Enquanto você luta contra esse sistema injusto, outras pessoas – que você SABE que têm situação pior – conseguem cartões premium, financiamentos com taxas baixas, e vivem a vida financeira que VOCÊ deveria estar vivendo.
+                </p>
+                
+                <div class="w-full flex justify-center pt-2">
+                    <button class="w-full sm:w-auto sm:px-12 py-4 bg-[#00b32c] hover:bg-[#00ff44] text-white hover:text-black font-black text-sm sm:text-base uppercase tracking-wider rounded-md transition-all duration-300 shadow-[0_0_30px_rgba(0,179,44,0.3)] hover:shadow-[0_0_40px_rgba(0,255,68,0.5)] transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer">
+                        Quero ter acesso ao crédito!
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- SEÇÃO 8 -->
+    <section class="w-full bg-[#030c06] py-16 md:py-24 px-4 flex justify-center items-center border-b border-green-950/20">
+        
+        <div class="max-w-7xl w-full flex flex-col items-center space-y-10 md:space-y-12">
+            
+            <div class="text-center w-full max-w-3xl px-2">
+                <h2 class="text-gray-200 text-lg sm:text-xl md:text-2xl font-medium leading-relaxed tracking-wide">
+                    Eu sei exatamente como você se sente - porque eu já<br class="hidden sm:block"> <span class="text-white font-bold underline decoration-[#00ff44]">estive do outro lado da mesa.</span>
+                </h2>
+            </div>
+
+            <div class="w-full grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-start">
+                
+                <div class="md:col-span-5 flex justify-center items-center px-4 md:px-0">
+                    <div class="relative w-full max-w-[340px] md:max-w-full rounded-2xl overflow-hidden shadow-2xl border border-green-950/30">
+                        <img src="FOTO_WAL_MACEDO.jpg" alt="Wal Macedo - Especialista" class="w-full h-auto object-cover">
+                    </div>
+                </div>
+
+                <div class="md:col-span-7 flex flex-col space-y-4 text-gray-300 font-medium text-xs sm:text-sm md:text-base leading-relaxed tracking-wide px-2 md:px-0 text-left">
+                    
+                    <p>
+                        Sou <span class="text-white font-bold">Wal Macedo</span>, e por mais de 15 anos como gerente em <span class="text-[#00ff44] font-bold">um dos maiores bancos do Brasil</span>, eu era a pessoa que tinha que dar a notícia: “Infelizmente, seu crédito não foi aprovado”.
+                    </p>
+
+                    <p>
+                        Eu via pessoas dedicadas e bons pagadores serem recusados, enquanto outros conseguiam crédito facilmente. Eu sentia a impotência nos olhos deles e, por muito tempo, não entendia a lógica por trás das recusas.
+                    </p>
+
+                    <p>
+                        Foi então que mergulhei nos sistemas internos, estudei padrões, analisando centenas de pessoas que tinham seus pedidos aceitos e entendi quais eram os elementos presentes no perfil das pessoas que conseguiam a aprovação. Entendi o padrão por trás do rating bancário e comecei a aplicar esse conhecimento para ajudar algumas pessoas.
+                    </p>
+
+                    <p>
+                        E os resultados foram simplesmente inacreditáveis. Com isso, cheguei à conclusão de que a maioria das pessoas está com nota D ou E, presas em um ciclo de recusa sem saber o porquê.
+                    </p>
+
+                    <p class="pt-2">
+                        Pensando nisso, desenvolvi este método para ser o mapa que eu gostaria de poder ter entregue àquelas pessoas. <span class="text-white font-extrabold">É o passo a passo para virar o jogo contra o sistema e conquistar a dignidade financeira que você merece.</span>
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- SEÇÃO 9 -->
+    <section class="w-full bg-[#030c06] py-16 md:py-24 px-4 flex justify-center items-center border-b border-green-950/20">
+        
+        <div class="max-w-7xl w-full flex flex-col space-y-10 md:space-y-12">
+            
+            <div class="w-full text-left px-2 md:px-0">
+                <h2 class="text-white text-3xl sm:text-4xl font-extrabold tracking-tight">
+                    Resultados Comprovados
+                </h2>
+            </div>
+
+            <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 items-stretch px-2 md:px-0">
+                
+                <div class="bg-[#0b0f0b]/90 border border-green-950/40 rounded-xl p-6 sm:p-8 flex flex-col space-y-4 shadow-xl text-left">
+                    <div class="text-gray-400 select-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-200 font-medium text-sm sm:text-base leading-relaxed tracking-wide">
+                        Mais de 40.000 casos de sucesso documentados
+                    </p>
+                </div>
+
+                <div class="bg-[#0b0f0b]/90 border border-green-950/40 rounded-xl p-6 sm:p-8 flex flex-col space-y-4 shadow-xl text-left">
+                    <div class="text-gray-400 select-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-200 font-medium text-sm sm:text-base leading-relaxed tracking-wide">
+                        67% conseguem aprovação para cartão em até 10 dias
+                    </p>
+                </div>
+
+                <div class="bg-[#0b0f0b]/90 border border-green-950/40 rounded-xl p-6 sm:p-8 flex flex-col space-y-4 shadow-xl text-left">
+                    <div class="text-gray-400 select-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-200 font-medium text-sm sm:text-base leading-relaxed tracking-wide">
+                        94% conseguem aumento de limite em até 3 meses
+                    </p>
+                </div>
+
+                <div class="bg-[#0b0f0b]/90 border border-green-950/40 rounded-xl p-6 sm:p-8 flex flex-col space-y-4 shadow-xl text-left">
+                    <div class="text-gray-400 select-none">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-gray-200 font-medium text-sm sm:text-base leading-relaxed tracking-wide">
+                        76% relatam que sua vida financeira mudou completamente
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- SEÇÃO 10 | DEPOIMENTOS (GRID DE VÍDEOS) -->
+    <section class="w-full bg-[#030c06] py-16 md:py-24 px-4 flex justify-center items-center border-b border-green-950/20">
+        
+        <div class="max-w-7xl w-full flex flex-col items-center space-y-12 md:space-y-16">
+            
+            <!-- Grid de Vídeos de Depoimentos -->
+            <div class="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-2 md:px-0">
+                
+                <!-- Card de Depoimento 1 -->
+                <div class="group relative aspect-video bg-[#0b0f0b] rounded-lg overflow-hidden shadow-2xl border border-gray-800/40 cursor-pointer">
+                    <!-- Substitua pelo link da thumbnail real do vídeo -->
+                    <img src="THUMB_DEPOIMENTO_1.jpg" alt="Depoimento Aluno" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <!-- Camada de Overlay Escura + Botão de Play Transparente Centralizado -->
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center rounded-full border-2 border-white/80 bg-black/30 backdrop-blur-sm text-white text-xl sm:text-2xl pl-1 shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                            ▶
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Depoimento 2 -->
+                <div class="group relative aspect-video bg-[#0b0f0b] rounded-lg overflow-hidden shadow-2xl border border-gray-800/40 cursor-pointer">
+                    <img src="THUMB_DEPOIMENTO_2.jpg" alt="Depoimento Aluno" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center rounded-full border-2 border-white/80 bg-black/30 backdrop-blur-sm text-white text-xl sm:text-2xl pl-1 shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                            ▶
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Depoimento 3 -->
+                <div class="group relative aspect-video bg-[#0b0f0b] rounded-lg overflow-hidden shadow-2xl border border-gray-800/40 cursor-pointer">
+                    <img src="THUMB_DEPOIMENTO_3.jpg" alt="Depoimento Aluno" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center rounded-full border-2 border-white/80 bg-black/30 backdrop-blur-sm text-white text-xl sm:text-2xl pl-1 shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                            ▶
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Depoimento 4 -->
+                <div class="group relative aspect-video bg-[#0b0f0b] rounded-lg overflow-hidden shadow-2xl border border-gray-800/40 cursor-pointer">
+                    <img src="THUMB_DEPOIMENTO_4.jpg" alt="Depoimento Aluno" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center rounded-full border-2 border-white/80 bg-black/30 backdrop-blur-sm text-white text-xl sm:text-2xl pl-1 shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                            ▶
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Depoimento 5 -->
+                <div class="group relative aspect-video bg-[#0b0f0b] rounded-lg overflow-hidden shadow-2xl border border-gray-800/40 cursor-pointer">
+                    <img src="THUMB_DEPOIMENTO_5.jpg" alt="Depoimento Aluno" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center rounded-full border-2 border-white/80 bg-black/30 backdrop-blur-sm text-white text-xl sm:text-2xl pl-1 shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                            ▶
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card de Depoimento 6 -->
+                <div class="group relative aspect-video bg-[#0b0f0b] rounded-lg overflow-hidden shadow-2xl border border-gray-800/40 cursor-pointer">
+                    <img src="THUMB_DEPOIMENTO_6.jpg" alt="Depoimento Aluno" class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+                        <div class="w-14 h-14 sm:w-16 sm:h-16 flex items-center justify-center rounded-full border-2 border-white/80 bg-black/30 backdrop-blur-sm text-white text-xl sm:text-2xl pl-1 shadow-2xl transition-transform duration-300 group-hover:scale-110">
+                            ▶
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Botão Chamada para Ação (CTA) em Destaque -->
+            <div class="w-full flex justify-center pt-4">
+                <button class="w-full sm:w-auto sm:px-16 py-4 bg-[#00b32c] hover:bg-[#00ff44] text-white hover:text-black font-black text-sm sm:text-base uppercase tracking-wider rounded-md transition-all duration-300 shadow-[0_0_30px_rgba(0,179,44,0.3)] hover:shadow-[0_0_40px_rgba(0,255,68,0.5)] transform hover:-translate-y-0.5 active:translate-y-0 cursor-pointer">
+                    Quero ter acesso ao crédito!
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- SEÇÃO 11 | ESTUDO DE CASO (HISTÓRIA DA PATRÍCIA); IMAGINE SUA VIDA (MURAL DE IMAGENS, LISTA E REVELAÇÃO DO MÉTODO)  -->
+    <section class="w-full bg-[#030c06] py-16 md:py-24 px-4 flex flex-col items-center border-b border-green-950/20">
+        
+        <div class="max-w-7xl w-full flex flex-col space-y-12 md:space-y-16">
+            
+            <!-- Bloco de Conteúdo: Mural + Lista de Desejos -->
+            <div class="w-full grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 items-center">
+                
+                <!-- Coluna da Esquerda: Mural de Fotos Assimétrico (Estilo image_dac6a4.jpg) -->
+                <div class="md:col-span-5 grid grid-cols-2 gap-3 md:gap-4 order-2 md:order-1">
+                    
+                    <!-- Foto 1: Jantar em Família -->
+                    <div class="rounded-xl overflow-hidden shadow-lg aspect-square border border-green-950/20">
+                        <img src="FOTO_JANTAR.jpg" alt="Família jantando em restaurante" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <!-- Foto 2: Carro Novo -->
+                    <div class="rounded-xl overflow-hidden shadow-lg aspect-square border border-green-950/20">
+                        <img src="FOTO_CARRO.jpg" alt="Homem dirigindo carro zero" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <!-- Foto 3: Sucesso Financeiro / Celular -->
+                    <div class="rounded-xl overflow-hidden shadow-lg aspect-square border border-green-950/20">
+                        <img src="FOTO_CELULAR.jpg" alt="Homem sorrindo com celular" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <!-- Foto 4: Organização / Faculdade -->
+                    <div class="rounded-xl overflow-hidden shadow-lg aspect-square border border-green-950/20">
+                        <img src="FOTO_FACULDADE.jpg" alt="Mulher trabalhando no notebook" class="w-full h-full object-cover">
+                    </div>
+                    
+                    <!-- Foto 5: Sono Tranquilo (Base do Mural) -->
+                    <div class="col-span-2 rounded-xl overflow-hidden shadow-lg h-32 sm:h-40 md:h-44 border border-green-950/20">
+                        <img src="FOTO_SONO.jpg" alt="Homem dormindo tranquilamente" class="w-full h-full object-cover">
+                    </div>
+
+                </div>
+
+                <!-- Coluna da Direita: Lista de Desejos e Conquistas -->
+                <div class="md:col-span-7 flex flex-col space-y-6 md:space-y-8 order-1 md:order-2 px-2 text-left">
+                    
+                    <h2 class="text-white text-2xl sm:text-3xl font-extrabold tracking-tight">
+                        Imagine sua vida daqui 6 Meses
+                    </h2>
+
+                    <ul class="space-y-4 text-gray-300 font-medium text-xs sm:text-sm md:text-base leading-relaxed tracking-wide">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-red-500 text-base select-none mt-0.5">🎯</span>
+                            <p>Jantando com a família naquele restaurante que sempre quis – <span class="text-white font-bold">sem se preocupar com o valor da conta</span></p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-red-500 text-base select-none mt-0.5">🎯</span>
+                            <p>Dirigindo seu carro zero saindo da concessionária – <span class="text-white font-bold">com financiamento aprovado na hora</span></p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-red-500 text-base select-none mt-0.5">🎯</span>
+                            <p>Bancando a faculdade dos filhos sem aperto – investindo no futuro da família</p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-red-500 text-base select-none mt-0.5">🎯</span>
+                            <p>Tendo sempre crédito disponível para oportunidades – nunca mais perdendo uma chance por falta de grana</p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-red-500 text-base select-none mt-0.5">🎯</span>
+                            <p>Sendo tratado como cliente VIP em qualquer lugar – com respeito e condições especiais</p>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-red-500 text-base select-none mt-0.5">🎯</span>
+                            <p>Dormindo tranquilo sabendo que tem reserva de emergência – proteção total para sua família</p>
+                        </li>
+                    </ul>
+
+                    <!-- Frase de Impacto de Conclusão -->
+                    <p class="text-gray-300 font-medium text-xs sm:text-sm md:text-base border-t border-green-950/20 pt-4 leading-relaxed">
+                        Essa é a <span class="text-white font-extrabold">diferença entre viver com rating D/E (rejeitado)</span> e <span class="text-[#00ff44] font-extrabold">rating A (aprovado)</span>.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <!-- BANNER DE REVELAÇÃO DO MÉTODO (Estilo image_dac286.png) -->
+            <div class="w-full flex flex-col items-center pt-4 md:pt-6">
+                
+                <!-- Pré-título sutil -->
+                <p class="text-white text-base sm:text-lg md:text-xl font-bold uppercase tracking-widest text-center mb-5">
+                    É por isso que eu criei o...
+                </p>
+
+                <!-- Tarja Verde de Destaque Máximo (Largura Total) -->
+                <div class="w-full bg-[#00b32c] py-6 sm:py-8 px-4 rounded-xl shadow-[0_0_50px_rgba(0,179,44,0.15)] flex justify-center items-center">
+                    <h3 class="text-white text-xl sm:text-2xl md:text-4xl font-black uppercase tracking-wide text-center leading-tight max-w-4xl">
+                        Passo a Passo Destrave Seu Nome<br class="sm:hidden"> Em Todos Os Bancos
+                    </h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- SEÇÃO 12 | CONTEÚDO PROGRAMÁTICO (MÓDULOS - image_dabaa8.png) -->
+    <section class="w-full bg-[#030c06] py-16 md:py-24 px-4 flex flex-col items-center border-b border-green-950/20">
+        
+        <div class="max-w-7xl w-full flex flex-col space-y-8">
+            
+            <!-- Título Opcional da Seção (Pode ser removido se não houver na sua estrutura de blocos) -->
+            <div class="w-full text-center mb-6">
+                <h2 class="text-white text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight">
+                    O Que Você Vai Aprender Por Dentro
+                </h2>
+                <p class="text-gray-400 text-xs sm:text-sm mt-2">O cronograma exato para transformar o seu perfil bancário.</p>
+            </div>
+
+            <!-- CONTAINER DOS MÓDULOS -->
+            <div class="w-full flex flex-col space-y-6">
+
+                <!-- MÓDULO 01 -->
+                <div class="w-full grid grid-cols-1 md:grid-cols-12 bg-[#060d08] border border-green-950/30 rounded-xl overflow-hidden shadow-xl">
+                    <!-- Ilustração Esquerda -->
+                    <div class="md:col-span-4 bg-gradient-to-br from-green-950/40 to-black p-6 flex flex-col justify-center items-center border-b md:border-b-0 md:border-r border-green-950/20 min-h-[140px] md:min-h-0">
+                        <!-- Representação Gráfica Simbolizando os Ratings AAA, AA, A+ da Imagem -->
+                        <div class="flex flex-col space-y-1.5 w-full max-w-[140px] opacity-60">
+                            <div class="w-full h-3 bg-gradient-to-r from-emerald-600 to-green-500 rounded-sm flex items-center justify-end px-1 text-[8px] text-black font-black">AAA</div>
+                            <div class="w-[90%] h-3 bg-gradient-to-r from-emerald-600 to-green-500 rounded-sm opacity-90 flex items-center justify-end px-1 text-[8px] text-black font-black">AA+</div>
+                            <div class="w-[80%] h-3 bg-gradient-to-r from-emerald-700 to-green-600 rounded-sm opacity-80 flex items-center justify-end px-1 text-[8px] text-black font-black">A+</div>
+                            <div class="w-[70%] h-3 bg-gradient-to-r from-green-800 to-emerald-700 rounded-sm opacity-60 flex items-center justify-end px-1 text-[8px] text-black font-black">A</div>
+                            <div class="w-[60%] h-3 bg-zinc-800 rounded-sm opacity-40"></div>
+                        </div>
+                    </div>
+                    <!-- Conteúdo Direita -->
+                    <div class="md:col-span-8 p-6 sm:p-8 flex flex-col justify-center text-left">
+                        <div class="text-center md:text-left mb-4">
+                            <span class="text-white text-lg sm:text-xl font-black uppercase tracking-wide block">Módulo 01</span>
+                            <div class="w-full h-[1px] bg-gray-700 my-2"></div>
+                            <span class="text-white text-sm sm:text-base font-bold tracking-wide">Raio-X Bancário Completo</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-300 font-medium text-xs sm:text-sm leading-relaxed pt-2">
+                            <li class="flex items-start space-x-2.5">
+                                <span class="bg-emerald-500 text-black text-[9px] font-extrabold px-1 rounded mt-0.5 select-none">✓</span>
+                                <p>Descubra sua nota secreta no rating (A a E)</p>
+                            </li>
+                            <li class="flex items-start space-x-2.5">
+                                <span class="bg-emerald-500 text-black text-[9px] font-extrabold px-1 rounded mt-0.5 select-none">✓</span>
+                                <p>Identifique exatamente quais os motivos estão te prejudicando</p>
+                            </li>
+                            <li class="flex items-start space-x-2.5">
+                                <span class="bg-emerald-500 text-black text-[9px] font-extrabold px-1 rounded mt-0.5 select-none">✓</span>
+                                <p>Entenda seu perfil em cada banco</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- MÓDULO 02 -->
+                <div class="w-full grid grid-cols-1 md:grid-cols-12 bg-[#060d08] border border-green-950/30 rounded-xl overflow-hidden shadow-xl">
+                    <!-- Ilustração Esquerda -->
+                    <div class="md:col-span-4 bg-gradient-to-br from-green-950/40 to-black p-6 flex flex-col justify-center items-center border-b md:border-b-0 md:border-r border-green-950/20 min-h-[140px] md:min-h-0">
+                        <!-- Fluxo de Cadastro e CPF Digital -->
+                        <div class="relative w-32 h-24 border border-emerald-950/50 rounded-lg p-2 flex flex-col justify-between items-center bg-black/40 opacity-50">
+                            <div class="text-[9px] font-mono text-emerald-500 border border-emerald-500/30 px-1.5 py-0.5 rounded">CPF</div>
+                            <div class="w-16 h-8 border border-emerald-400 text-center text-[8px] font-black tracking-widest text-emerald-400 flex items-center justify-center rounded">CADASTRO</div>
+                            <div class="w-4 h-[1px] bg-emerald-500/30"></div>
+                        </div>
+                    </div>
+                    <!-- Conteúdo Direita -->
+                    <div class="md:col-span-8 p-6 sm:p-8 flex flex-col justify-center text-left">
+                        <div class="text-center md:text-left mb-4">
+                            <span class="text-white text-lg sm:text-xl font-black uppercase tracking-wide block">Módulo 02</span>
+                            <div class="w-full h-[1px] bg-gray-700 my-2"></div>
+                            <span class="text-white text-sm sm:text-base font-bold tracking-wide">As 15 Estratégias Secretas de Aprovação</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-300 font-medium text-xs sm:text-sm leading-relaxed pt-2">
+                            <li class="flex items-start space-x-2.5">
+                                <span class="bg-emerald-500 text-black text-[9px] font-extrabold px-1 rounded mt-0.5 select-none">✓</span>
+                                <p>Movimentações exatas que aumentam sua nota em até 30 dias</p>
+                            </li>
+                            <li class="flex items-start space-x-2.5">
+                                <span class="bg-emerald-500 text-black text-[9px] font-extrabold px-1 rounded mt-0.5 select-none">✓</span>
+                                <p>Como corrigir os erros que 90% das pessoas cometem sem saber</p>
+                            </li>
+                            <li class="flex items-start space-x-2.5">
+                                <span class="bg-emerald-500 text-black text-[9px] font-extrabold px-1 rounded mt-0.5 select-none">✓</span>
+                                <p>Protocolo específico para cada situação</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- MÓDULO 03 -->
+                <div class="w-full grid grid-cols-1 md:grid-cols-12 bg-[#060d08] border border-green-950/30 rounded-xl overflow-hidden shadow-xl">
+                    <!-- Ilustração Esquerda -->
+                    <div class="md:col-span-4 bg-gradient-to-br from-green-950/40 to-black p-6 flex flex-col justify-center items-center border-b md:border-b-0 md:border-r border-green-950/20 min-h-[140px] md:min-h-0">
+                        <!-- Representação de Cartões de Crédito Empilhados -->
+                        <div class="relative w-28 h-16 opacity-40">
+                            <div class="absolute inset-0 bg-gradient-to-br from-zinc-800 to-black rounded-md border border-zinc-700/30 transform -rotate-12 translate-y-1"></div>
+                            <div class="absolute inset-0 bg-gradient-to-br from-emerald-900 to-zinc-950 rounded-md border border-emerald-700/20 transform rotate-2 translate-x-2"></div>
+                        </div>
+                    </div>
+                    <!-- Conteúdo Direita -->
+                    <div class="md:col-span-8 p-6 sm:p-8 flex flex-col justify-center text-left">
+                        <div class="text-center md:text-left mb-4">
+                            <span class="text-white text-lg sm:text-xl font-black uppercase tracking-wide block">Módulo 03</span>
+                            <div class="w-full h-[1px] bg-gray-700 my-2"></div>
+                            <span class="text-white text-sm sm:text-base font-bold tracking-wide">Protocolo de Aprovação Garantida</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-300 font-medium text-xs sm:text-sm leading-relaxed pt-2">
+                            <li class="flex items-start space-x-2.5">
+                                <span class="bg-emerald-500 text-black text-[9px] font-extrabold px-1 rounded mt-0.5 select-none">✓</span>
+                                <p>Técnicas comprovadas para saltar do D para o A/B</p>
+                            </li>
+                            <li class="flex items-start space-x-2.5">
+                                <span class="bg-emerald-500 text-black text-[9px] font-extrabold px-1 rounded mt-0.5 select-none">✓</span>
+                                <p>Método que aumenta suas chances de aprovação em mais de 300%</p>
+                            </li>
+                            <li class="flex items-start space-x-2.5">
+                                <span class="bg-emerald-500 text-black text-[9px] font-extrabold px-1 rounded mt-0.5 select-none">✓</span>
+                                <p>Timing exato para cada solicitação</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- MÓDULO 04 -->
+                <div class="w-full grid grid-cols-1 md:grid-cols-12 bg-[#060d08] border border-green-950/30 rounded-xl overflow-hidden shadow-xl">
+                    <!-- Ilustração Esquerda -->
+                    <div class="md:col-span-4 bg-gradient-to-br from-green-950/40 to-black p-6 flex flex-col justify-center items-center border-b md:border-b-0 md:border-r border-green-950/20 min-h-[140px] md:min-h-0">
+                        <!-- Elemento de Tela de Painel / Dashboard Financeiro -->
+                        <div class="w-32 h-20 bg-black/40 border border-emerald-950/40 rounded p-1.5 flex flex-col space-y-1.5 opacity-40">
+                            <div class="flex items-center space-x-1">
+                                <div class="w-3 h-3 rounded-full border border-emerald-500/50"></div>
+                                <div class="w-10 h-1 bg-emerald-500/30 rounded-sm"></div>
+                            </div>
+                            <div class="w-full h-2 bg-zinc-900 rounded-sm"></div>
+                            <div class="w-4/5 h-2 bg-zinc-900 rounded-sm"></div>
+                        </div>
+                    </div>
+                    <!-- Conteúdo Direita -->
+                    <div class="md:col-span-8 p-6 sm:p-8 flex flex-col justify-center text-left">
+                        <div class="text-center md:text-left mb-4">
+                            <span class="text-white text-lg sm:text-xl font-black uppercase tracking-wide block">Módulo 04</span>
+                            <div class="w-full h-[1px] bg-gray-700 my-2"></div>
+                            <span class="text-white text-sm sm:text-base font-bold tracking-wide">Preservação do Rating</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-300 font-medium text-xs sm:text-sm leading-relaxed pt-2">
+                            <li class="flex items-start space-x-2.5">
+                                <span class="bg-emerald-500 text-black text-[9px] font-extrabold px-1 rounded mt-0.5 select-none">✓</span>
+                                <p>Como evitar as ações que derrubam sua pontuação</p>
+                            </li>
+                            <li class="flex items-start space-x-2.5">
+                                <span class="bg-emerald-500 text-black text-[9px] font-extrabold px-1 rounded mt-0.5 select-none">✓</span>
+                                <p>Manutenção do status de aprovação conquistado</p>
+                            </li>
+                            <li class="flex items-start space-x-2.5">
+                                <span class="bg-emerald-500 text-black text-[9px] font-extrabold px-1 rounded mt-0.5 select-none">✓</span>
+                                <p>Estratégias para crescimento contínuo de limite</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!-- SEÇÃO 13 -->
+    <section class="w-full bg-[#020503] py-14 px-4 flex flex-col items-center border-b border-zinc-900">
+    <div class="max-w-7xl w-full text-center flex flex-col items-center space-y-6">
+        
+        <h2 class="text-white text-2xl sm:text-3xl md:text-4xl font-black tracking-tight font-sans">
+            Ferramentas Exclusivas
+        </h2>
+
+        <div class="w-full flex flex-col space-y-4 items-center max-w-xl pt-2">
+            
+            <div class="flex items-center space-x-3 text-left w-full justify-start sm:justify-center">
+                <span class="flex-shrink-0 text-emerald-400 text-lg font-bold">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </span>
+                <p class="text-white font-bold text-sm sm:text-base tracking-wide">
+                    Checklist Estratégico À Prova de Falhas <span class="text-zinc-400 font-normal">- Para executar sem erros</span>
+                </p>
+            </div>
+
+            <div class="flex items-center space-x-3 text-left w-full justify-start sm:justify-center pl-4 sm:pl-8">
+                <span class="flex-shrink-0 text-emerald-400 text-lg font-bold">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </span>
+                <p class="text-white font-bold text-sm sm:text-base tracking-wide">
+                    Suporte Exclusivo <span class="text-zinc-400 font-normal">- Para acelerar o seu resultado</span>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+    </section>
+    <!-- SEÇÃO 14 -->
+    <section class="w-full bg-[#090d0a] text-white py-16 px-4 font-sans flex flex-col items-center select-none">
+    <div class="max-w-7xl w-full flex flex-col items-center">
+        
+        <div class="w-full max-w-2xl bg-[#0e1410] border border-emerald-950/40 rounded-xl p-6 md:p-8 shadow-xl mb-10">
+            <ul class="space-y-4 text-xs sm:text-sm font-medium text-zinc-300">
+                <li class="flex items-start space-x-3">
+                    <span class="text-emerald-400 mt-0.5">✔</span>
+                    <p><strong class="text-white">Treinamento Completo "Desbloqueando Seu Nome"</strong> - 4 etapas o passo a passo <span class="text-emerald-500/90 font-bold">(Valor: R$ 297)</span></p>
+                </li>
+                <li class="flex items-start space-x-3">
+                    <span class="text-emerald-400 mt-0.5">✔</span>
+                    <p><strong class="text-white">Bônus 3</strong> - Lista de Erros que Derrubam Rating - Para evitar as armadilhas fatais <span class="text-emerald-500/90 font-bold">(Valor: R$ 97)</span></p>
+                </li>
+                <li class="flex items-start space-x-3">
+                    <span class="text-emerald-400 mt-0.5">✔</span>
+                    <p><strong class="text-white">Bônus 4</strong> - Aula Aumento de Limite - Para multiplicar seu limite atual <span class="text-emerald-500/90 font-bold">(Valor: R$ 97)</span></p>
+                </li>
+                <li class="flex items-start space-x-3">
+                    <span class="text-emerald-400 mt-0.5">✔</span>
+                    <p><strong class="text-white">Suporte Exclusivo</strong> - Para acelerar o seu resultado <span class="text-emerald-500/90 font-bold">(Valor: R$ 147)</span></p>
+                </li>
+                <li class="flex items-start space-x-3">
+                    <span class="text-emerald-400 mt-0.5">✔</span>
+                    <p><strong class="text-white">Bônus Exclusivo de Hoje</strong> - Grupo VIP no Telegram - Acesso direto a mim e comunidade exclusiva <span class="text-emerald-500/90 font-bold">(Valor: R$ 67)</span></p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="text-center space-y-2 mb-6">
+            <h3 class="text-zinc-300 font-bold text-lg sm:text-xl md:text-2xl tracking-tight">
+                Valor Total de Tudo que Você Levar:
+            </h3>
+            <p class="text-white font-black text-xl sm:text-2xl md:text-3xl">
+                De <span class="line-through text-zinc-500">R$ 705</span> Por <span class="text-emerald-400">R$ 297</span>
+            </p>
+        </div>
+
+        <div class="w-full max-w-2xl h-[1px] bg-zinc-800/60 my-6"></div>
+
+        <p class="text-center text-zinc-400 text-xs sm:text-sm font-semibold max-w-xl leading-relaxed mb-12">
+            E este método vale facilmente R$ 1.000 - é o que especialistas cobram por consultoria financeira sem garantia de resultado.
+        </p>
+
+
+        <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch mb-16">
+            
+            <div class="bg-[#03440e] border border-emerald-500/40 rounded-2xl p-6 sm:p-8 flex flex-col items-center justify-between shadow-2xl relative overflow-hidden">
+                <div class="text-center flex flex-col items-center w-full">
+                    <h4 class="text-emerald-400 font-black text-3xl sm:text-4xl tracking-tighter uppercase leading-none">
+                        RATING
+                    </h4>
+                    <span class="text-white font-black text-sm tracking-widest uppercase -mt-0.5">DESTRAVE SEU NOME</span>
+                    <span class="text-white font-black text-xl tracking-tight uppercase leading-none mb-4">NOS BANCOS</span>
+                    
+                    <p class="text-zinc-200 text-[11px] sm:text-xs font-medium max-w-[220px] mb-6 leading-tight">
+                        Seu investimento hoje para se tornar desejado pelos bancos é de apenas:
+                    </p>
+
+                    <p class="text-zinc-200 font-bold text-sm">12x de</p>
+                    <p class="text-white font-black text-3xl sm:text-4xl tracking-tight my-1">
+                        R$ 30,72
+                    </p>
+                    <p class="text-zinc-200 font-bold text-xs uppercase tracking-wider mb-6">
+                        ou R$ 297,00 À VISTA
+                    </p>
+
+                    <button class="w-full bg-[#00b31e] hover:bg-[#00cb22] text-white font-black text-xs sm:text-sm uppercase tracking-wide py-3.5 px-4 rounded-md shadow-lg transition-all transform hover:scale-[1.02]">
+                        QUERO DESTRAVE MEU NOME
+                    </button>
+                    
+                    <p class="text-[9px] text-zinc-300/80 font-medium mt-4 max-w-[240px] leading-tight">
+                        São apenas R$ 1,02 por dia para ter acesso ao método que vai te dar crédito aprovado em qualquer lugar do país.
+                    </p>
+                </div>
+
+                <div class="w-full flex flex-col items-center space-y-2 mt-6 pt-4 border-t border-emerald-800/40 opacity-60">
+                    <div class="flex items-center space-x-2 text-[10px] font-mono text-zinc-300">
+                        <span>💳 VISA</span>
+                        <span>•</span>
+                        <span>MasterCard</span>
+                        <span>•</span>
+                        <span>Pix</span>
+                    </div>
+                    <div class="text-[9px] uppercase tracking-widest text-zinc-400 font-bold">
+                        ⚡ kiwify | Compra Segura
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center justify-center p-6 sm:p-8 text-center md:text-left md:items-start space-y-4">
+                
+                <div class="w-32 h-32 rounded-full bg-[#00a31a] p-1 flex items-center justify-center shadow-[0_0_20px_rgba(0,163,26,0.3)] mx-auto md:mx-0 mb-2">
+                    <div class="w-full h-full rounded-full border-2 border-dashed border-emerald-200/40 flex flex-col items-center justify-center text-white">
+                        <span class="text-4xl font-black leading-none">7</span>
+                        <span class="text-[10px] font-bold uppercase tracking-widest mt-0.5">Dias de</span>
+                        <span class="text-xs font-black uppercase tracking-wide leading-none">Garantia</span>
+                    </div>
+                </div>
+
+                <h4 class="text-white text-base sm:text-lg font-black tracking-tight uppercase">
+                    SUA TRANSFORMAÇÃO É <br class="hidden md:block">
+                    <span class="text-emerald-400">Garantida ou seu Dinheiro de Volta</span>
+                </h4>
+
+                <div class="text-zinc-300 text-xs sm:text-sm font-medium space-y-3 leading-relaxed">
+                    <p>Você tem 7 dias completos para testar o método.</p>
+                    <p>Se não ficar 100% satisfeito por qualquer motivo, eu assumo o risco e devolvo todo o seu dinheiro.</p>
+                    <p class="text-white font-bold">O risco é todo meu.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="w-full flex flex-col items-center space-y-4 pt-4">
+            <h3 class="text-white text-xl sm:text-2xl md:text-3xl font-black text-center tracking-tight max-w-xl leading-tight mb-4">
+                Por Que Limitamos as Vagas a Apenas 500 Pessoas:
+            </h3>
+
+            <div class="w-full bg-[#061c0a] border border-emerald-950/60 p-4 rounded-lg text-left text-xs sm:text-sm text-zinc-300">
+                <p><span class="text-emerald-400 font-bold">1. Atenção Personalizada:</span> Quero dar suporte individual a cada aluno</p>
+            </div>
+
+            <div class="w-full bg-[#061c0a] border border-emerald-950/60 p-4 rounded-lg text-left text-xs sm:text-sm text-zinc-300">
+                <p><span class="text-emerald-400 font-bold">2. Qualidade de Acompanhamento:</span> Limitamos as vagas para garantir suporte de qualidade e resultados reais, sem comprometer o acompanhamento.</p>
+            </div>
+
+            <div class="w-full bg-[#061c0a] border border-emerald-950/60 p-4 rounded-lg text-left text-xs sm:text-sm text-zinc-300">
+                <p><span class="text-emerald-400 font-bold">3. Compromisso com Resultados:</span> Meu objetivo não é apenas vender, mas garantir que cada aluno conquiste resultados concretos.</p>
+            </div>
+        </div>
+
+    </div>
+    </section>
+    <!-- SEÇÃO 15 DOIS CAMINHOS + FAQ (image_da556f.png / image_da5286.png) -->
+    <section class="w-full bg-[#161819] text-white py-16 px-4 font-sans flex flex-col items-center select-none">
+    <!-- FAIXA DE ALERTA DE ESCASSEZ (image_da4763.png) -->
+
+        <div class="max-w-none w-full flex flex-col items-center">
+        
+            <div class="w-[calc(100%+2rem)] md:w-[calc(100%+6rem)] -mx-4 md:-mx-12 bg-[#cc0000] py-3.5 px-4 flex items-center justify-center text-center select-none">
+            
+                <div class="flex items-center justify-center space-x-2 max-w-7xl">
+                    <span class="flex-shrink-0 text-white">
+                        <svg class="w-4 h-4 fill-current animate-pulse" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 12v-6h-2v8h7v-2h-5z"/>
+                        </svg>
+                    </span>
+                    <p class="text-white font-black text-xs sm:text-sm tracking-wide uppercase">
+                        ESTA OFERTA COM TODOS OS BÔNUS É VÁLIDA APENAS PARA AS 50 PRIMEIRAS VAGAS DA SEMANA.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- BLOCO: DOIS CAMINHOS -->
+        <div class="w-full flex flex-col items-center text-center mb-12">
+            <span class="text-zinc-400 text-xs sm:text-sm font-bold tracking-widest uppercase mb-1">
+                AGORA VOCÊ TEM APENAS
+            </span>
+            <h2 class="text-white text-4xl sm:text-5xl font-black tracking-tighter uppercase italic">
+                DOIS CAMINHOS
+            </h2>
+
+            <!-- Cards dos Caminhos Lateral a Lateral -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-3xl mt-8">
+                
+                <!-- Caminho 1 (Erro/Vermelho) -->
+                <div class="bg-[#111213] border border-red-900/60 rounded-xl p-6 flex flex-col items-center text-center">
+                    <span class="text-red-500 text-3xl font-black mb-3">✘</span>
+                    <h4 class="text-white font-extrabold text-sm sm:text-base uppercase tracking-wider mb-3">
+                        CAMINHO 1:
+                    </h4>
+                    <p class="text-zinc-400 text-xs sm:text-sm font-medium leading-relaxed">
+                        Fechar esta página e continuar sendo rejeitado pelos bancos, vendo outras pessoas conseguirem o que você merece, vivendo na frustração financeira pelo resto da vida. Continuar fingindo que este conhecimento não existe e permanecer com rating D/E para sempre.
+                    </p>
+                </div>
+
+                <!-- Caminho 2 (Sucesso/Verde) -->
+                <div class="bg-[#111213] border border-emerald-500/50 rounded-xl p-6 flex flex-col items-center text-center shadow-[0_0_15px_rgba(16,185,129,0.05)]">
+                    <span class="text-emerald-400 text-3xl font-black mb-3">✔</span>
+                    <h4 class="text-white font-extrabold text-sm sm:text-base uppercase tracking-wider mb-3">
+                        CAMINHO 2:
+                    </h4>
+                    <p class="text-zinc-400 text-xs sm:text-sm font-medium leading-relaxed">
+                        Investir R$ 297 hoje e ter acesso ao método que vai mudar sua classificação para rating A, desbloqueando TODOS os tipos de crédito que você precisa. Finalmente ter a vida financeira que sua família merece.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Textos de Apoio Pós-Cards -->
+            <p class="text-zinc-300 text-xs sm:text-sm italic mt-8 font-medium">
+                A escolha é sua: mudar agora ou seguir o mesmo ciclo de rejeição!
+            </p>
+            <p class="text-white text-sm sm:text-base font-black max-w-xl leading-snug mt-4 uppercase tracking-wide">
+                Mas eu sei que você está cansado da rejeição e vai <br> aproveitar esta chance única de virar o jogo.
+            </p>
+
+            <!-- Botão de Inscrição CTA -->
+            <button class="mt-6 bg-[#00b31e] hover:bg-[#00cb22] text-white font-black text-xs sm:text-xs uppercase tracking-wider py-3.5 px-8 rounded shadow-lg transition-all transform hover:scale-[1.01]">
+                QUERO TER ACESSO AO CRÉDITO
+            </button>
+            
+            <div class="text-[10px] text-zinc-500 font-bold tracking-wider mt-3 uppercase">
+                ⚡ kiwify <span class="font-normal text-zinc-600">| Compra Segura</span>
+            </div>
+        </div>
+
+        <!-- DIVISOR SUTIL -->
+        <div class="w-full max-w-3xl h-[1px] bg-zinc-800/40 my-10"></div>
+
+
+        <!-- BLOCO: FAQ - PERGUNTAS FREQUENTES -->
+        <div class="w-full max-w-4xl flex flex-col">
+            <h3 class="text-white text-xl sm:text-2xl font-black tracking-tight mb-6 text-left">
+                FAQ - Perguntas Frequentes
+            </h3>
+
+            <div class="flex flex-col space-y-3 w-full">
+                
+                <!-- Pergunta 1 -->
+                <div class="w-full bg-[#111213] border border-amber-950/30 rounded overflow-hidden">
+                    <div class="w-full p-4 flex justify-between items-center bg-black/20 border-b border-zinc-900">
+                        <span class="text-zinc-200 font-bold text-xs sm:text-sm">Funciona para qualquer banco?</span>
+                        <span class="text-emerald-400 text-xs font-bold">▶</span>
+                    </div>
+                    <div class="p-4 text-zinc-400 text-xs sm:text-sm font-medium leading-relaxed bg-[#0e0f10]">
+                        Sim, o sistema de rating interno é um padrão seguido por todos os bancos brasileiros, concessionárias e financeiras.
+                    </div>
+                </div>
+
+                <!-- Pergunta 2 -->
+                <div class="w-full bg-[#111213] border border-amber-950/30 rounded overflow-hidden">
+                    <div class="w-full p-4 flex justify-between items-center bg-black/20 border-b border-zinc-900">
+                        <span class="text-zinc-200 font-bold text-xs sm:text-sm">E se meu nome estiver sujo?</span>
+                        <span class="text-emerald-400 text-xs font-bold">▶</span>
+                    </div>
+                    <div class="p-4 text-zinc-400 text-xs sm:text-sm font-medium leading-relaxed bg-[#0e0f10]">
+                        Este método funciona para quem tem nome limpo mas é rejeitado pelos bancos. Se seu nome está sujo, primeiro você precisa limpar seu CPF, depois aplicar o método.
+                    </div>
+                </div>
+
+                <!-- Pergunta 3 -->
+                <div class="w-full bg-[#111213] border border-amber-950/30 rounded overflow-hidden">
+                    <div class="w-full p-4 flex justify-between items-center bg-black/20 border-b border-zinc-900">
+                        <span class="text-zinc-200 font-bold text-xs sm:text-sm">Em quanto tempo vejo resultados?</span>
+                        <span class="text-emerald-400 text-xs font-bold">▶</span>
+                    </div>
+                    <div class="p-4 text-zinc-400 text-xs sm:text-sm font-medium leading-relaxed bg-[#0e0f10]">
+                        87% dos nossos alunos conseguem a primeira aprovação em até 90 dias seguindo o passo a passo.
+                    </div>
+                </div>
+
+                <!-- Pergunta 4 -->
+                <div class="w-full bg-[#111213] border border-amber-950/30 rounded overflow-hidden">
+                    <div class="w-full p-4 flex justify-between items-center bg-black/20 border-b border-zinc-900">
+                        <span class="text-zinc-200 font-bold text-xs sm:text-sm">É garantido que vou ser aprovado?</span>
+                        <span class="text-emerald-400 text-xs font-bold">▶</span>
+                    </div>
+                    <div class="p-4 text-zinc-400 text-xs sm:text-sm font-medium leading-relaxed bg-[#0e0f10]">
+                        Não prometemos aprovação garantida, pois a decisão final é sempre do banco. Mas garantimos que você terá o método comprovado para maximizar suas chances e jogar com as regras a seu favor.
+                    </div>
+                </div>
+
+                <!-- Pergunta 5 -->
+                <div class="w-full bg-[#111213] border border-amber-950/30 rounded overflow-hidden">
+                    <div class="w-full p-4 flex justify-between items-center bg-black/20 border-b border-zinc-900">
+                        <span class="text-zinc-200 font-bold text-xs sm:text-sm">O acesso é online?</span>
+                        <span class="text-emerald-400 text-xs font-bold">▶</span>
+                    </div>
+                    <div class="p-4 text-zinc-400 text-xs sm:text-sm font-medium leading-relaxed bg-[#0e0f10]">
+                        Sim, 100% online com acesso imediato após a confirmação do pagamento.
+                    </div>
+                </div>
+
+                <!-- Pergunta 6 (image_da5286.png) -->
+                <div class="w-full bg-[#111213] border border-amber-950/30 rounded overflow-hidden">
+                    <div class="w-full p-4 flex justify-between items-center bg-black/20 border-b border-zinc-900">
+                        <span class="text-zinc-200 font-bold text-xs sm:text-sm">Tem suporte?</span>
+                        <span class="text-emerald-400 text-xs font-bold">▶</span>
+                    </div>
+                    <div class="p-4 text-zinc-400 text-xs sm:text-sm font-medium leading-relaxed bg-[#0e0f10]">
+                        Sim, através do Grupo VIP no Telegram você terá acesso direto a mim e à comunidade de alunos.
+                    </div>
+                </div>
+
+                <!-- Pergunta 7 (image_da5286.png) -->
+                <div class="w-full bg-[#111213] border border-amber-950/30 rounded overflow-hidden">
+                    <div class="w-full p-4 flex justify-between items-center bg-black/20 border-b border-zinc-900">
+                        <span class="text-zinc-200 font-bold text-xs sm:text-sm">Por que apenas 7 dias de garantia?</span>
+                        <span class="text-emerald-400 text-xs font-bold">▶</span>
+                    </div>
+                    <div class="p-4 text-zinc-400 text-xs sm:text-sm font-medium leading-relaxed bg-[#0e0f10]">
+                        Porque o método funciona rapidamente. Em 7 dias você já consegue aplicar as primeiras estratégias e ver os primeiros movimentos no seu rating. É tempo suficiente para avaliar a qualidade do conteúdo.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </section>
+    <!-- SEÇÃO 16 ENCERRAMENTO, BIOGRAFIA E RODAPÉ (image_da439c.jpg) -->
+    <section class="w-full bg-[#030503] text-white py-16 px-4 font-sans flex flex-col items-center select-none">
+    <div class="max-w-7xl w-full flex flex-col items-center">
+
+        <!-- BLOCO 1: ÚLTIMA CHAMADA VISUAL -->
+        <div class="text-center flex flex-col items-center space-y-4 max-w-4xl mb-16">
+            <h3 class="text-white text-lg sm:text-xl md:text-2xl font-black tracking-tight leading-snug">
+                Você merece ter acesso às mesmas oportunidades que outras pessoas têm, com dignidade.
+            </h3>
+            <p class="text-zinc-400 text-sm sm:text-base font-medium">
+                A escolha é sua: continuar sendo rejeitado ou finalmente virar o jogo.
+            </p>
+            
+            <!-- Botão CTA 1 -->
+            <button class="bg-[#00b31e] hover:bg-[#00cb22] text-white font-black text-[11px] sm:text-xs uppercase tracking-wider py-3.5 px-10 rounded shadow-lg transition-all transform hover:scale-[1.01] !mt-6">
+                QUERO TER ACESSO AO CRÉDITO
+            </button>
+            
+            <p class="text-[9px] text-zinc-500 font-medium leading-tight max-w-md pt-2">
+                Ao clicar no botão, você será direcionado para nossa página de pagamento 100% segura.<br>
+                Após a confirmação, receberá acesso imediato a todo o método.
+            </p>
+        </div>
+
+        <!-- BLOCO 2: BIO DO ESPECIALISTA (Grid de Foto + Texto) -->
+        <div class="w-full grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center bg-black/30 border border-zinc-900/50 rounded-2xl p-6 sm:p-8 mb-16">
+            
+            <!-- Coluna da Foto (Esquerda) -->
+            <div class="md:col-span-5 flex justify-center">
+                <div class="relative rounded-xl overflow-hidden border border-zinc-800 shadow-2xl max-w-sm w-full aspect-[4/3] md:aspect-square">
+                    <!-- Substitua 'especialista.jpg' pelo caminho real da sua imagem cortada da imagem original -->
+                    <img src="especialista.jpg" alt="Wal Macedo" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Coluna do Texto (Direita) -->
+            <div class="md:col-span-7 flex flex-col items-start text-left space-y-4">
+                <div class="text-zinc-300 text-xs sm:text-sm font-normal leading-relaxed space-y-4">
+                    <p>
+                        Sou <strong class="text-white font-bold">Wal Macedo</strong>, e por mais de 15 anos como gerente em <span class="text-white font-bold border-b border-zinc-700 pb-0.5">um dos maiores bancos do Brasil</span>, eu era a pessoa que tinha que dar a notícia: "Infelizmente, seu crédito não foi aprovado".
+                    </p>
+                    <p>
+                        Eu via pessoas dedicadas e bons pagadores serem recusados, enquanto outros conseguiam crédito facilmente. Eu sentia a impotência nos olhos deles e, por muito tempo, não entendia a lógica por trás das recusas.
+                    </p>
+                    <p>
+                        Foi então que mergulhei nos sistemas internos, estudei padrões, analisando centenas de pessoas que tinham seus pedidos aceitos e entendi quais eram os elementos presentes no perfil das pessoas que conseguiam a aprovação. Entendi o padrão por trás do rating bancário e comecei a aplicar esse conhecimento para ajudar algumas pessoas.
+                    </p>
+                    <p>
+                        E os resultados foram simplesmente inacreditáveis. Com isso, cheguei à conclusão de que a maioria das pessoas está com nota D ou E, presas em um ciclo de recusa sem saber o porquê.
+                    </p>
+                    <p>
+                        Pensando nisso, desenvolvi este método para ser o mapa que eu gostaria de poder ter entregue àquelas pessoas. É o passo a passo para virar o jogo contra o sistema e conquistar a dignidade financeira que você merece.
+                    </p>
+                </div>
+
+                <!-- Botão CTA 2 -->
+                <button class="bg-[#00b31e] hover:bg-[#00cb22] text-white font-black text-[10px] uppercase tracking-wider py-3 px-6 rounded shadow-md transition-all transform hover:scale-[1.01] pt-4">
+                    QUERO TER ACESSO AO CRÉDITO
+                </button>
+            </div>
+
+        </div>
+
+        <!-- DIVISOR DE RODAPÉ -->
+        <div class="w-full h-[1px] bg-zinc-900 my-4"></div>
+    </div>
+    </section>
+    <!-- BLOCO 17 COPYRIGHT, LINKS E LEGAL DISCLAIMER -->
+    <footer class="w-full text-center flex flex-col items-center space-y-4 pt-4">
+            <p class="text-zinc-500 font-bold text-[10px] tracking-wider uppercase">
+                SEGREDO DAS EMPRESAS © 2026
+            </p>
+            
+            <div class="flex items-center space-x-4 text-[9px] font-bold tracking-wide text-zinc-500 uppercase">
+                <a href="#termos" class="hover:text-zinc-300 transition-colors">TERMOS DE USO</a>
+                <span>•</span>
+                <a href="#privacidade" class="hover:text-zinc-300 transition-colors">POLÍTICA DE PRIVACIDADE</a>
+            </div>
+
+            <div class="w-full max-w-4xl pt-6">
+                <p class="text-zinc-600 font-medium text-[8px] sm:text-[9px] leading-relaxed max-w-3xl mx-auto border-t border-zinc-950 pt-4">
+                    Nenhuma informação contida neste produto deve ser interpretada como uma afirmação de obtenção de resultados. Qualquer referência ao desempenho passado ou potencial de uma estratégia abordada no conteúdo não é, e não deve ser interpretada como uma recomendação ou como garantia de qualquer resultado específico.
+                </p>
+            </div>
+    </footer>
+
+</body>
+</html>
