@@ -17,4 +17,4 @@ git push
 echo.
 echo 
 echo [Sucesso] Tudo pronto! Seu site foi atualizado.
-echo
+echo 
